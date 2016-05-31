@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView( R.layout.activity_main );
 
         mainTabsAdapter = new MainTabsAdapter( this, (TabHost)findViewById( android.R.id.tabhost ), (ViewPager)findViewById( R.id.pager ));
+
         mainTabsAdapter.selectTab(0);           // 첫 번째
 
     }
